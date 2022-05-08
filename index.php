@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["first_name"])) {
-    header('location:index.html');
+    header('location:form.php');
 }?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,9 @@ if(!isset($_SESSION["first_name"])) {
 
 <header class="header">
 
-    <a href="#" class="logo"><span>U</span>pevents</a>
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="events" style="max-width: 10rem ;max-height: 8rem">
+    </a>
 
     <nav class="navbar">
         <a href="#home">home</a>
